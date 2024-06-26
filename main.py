@@ -30,7 +30,7 @@ def on_exit(icon, item):
     os._exit(1)
 
 
-image = Image.open("""./srcs/Bang_icon.png""")
+image = Image.open("""./Bang_icon.png""")
 menu = (pystray.MenuItem("Exit", on_exit),)
 
 icon = pystray.Icon("spcs", image, f"Sleep PC Server running on IP: {SERVER_HOST_IP} and PORT: {SERVER_HOST_PORT}",
